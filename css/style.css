@@ -17,6 +17,7 @@ body {
 
 .navbar {
   color: #68359c;
+  background-color: #aad7a2;
 }
 
 h2 {
@@ -81,6 +82,10 @@ h2 {
   color: aliceblue;
 }
 
+.cartas {
+  background-color: #55487b;
+}
+
 .nueva_imagen_alicia:hover {
   content: url('../imagenes_tbmovies/perosnajes2/alicia_compu.png');
 }
@@ -105,6 +110,14 @@ h2 {
   content: url('../imagenes_tbmovies/perosnajes2/blanca_compu.png');
 }
 
+.ratio {
+  max-width: 600px;
+}
+
+.opiniones {
+  background-color: #55487b;
+}
+
 #opiniones .card {
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -113,6 +126,13 @@ h2 {
 #opiniones .card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.imagenes_opiniones {
+  width:60px; 
+  height:60px; 
+  object-fit:cover; 
+  margin-right:15px;
 }
 
 .carousel-control-prev-icon {
@@ -147,29 +167,46 @@ h2 {
 .boton_ver_pelicula {
   box-shadow: 0 3px 6px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  background-color: #aad7a2;
+  color: black;
 }
 
 .boton_ver_pelicula:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+  color: #000000;
+  background-color: #81bb76;
+}
+
+.form {
+  max-width: 1280px; 
+  background-color: #e0f2d8;
 }
 
 .formulario {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
+  flex-direction: column;
   gap: 20px;
 }
 
-.form-label strong{
-  color: #362a5c;
+.grupo-doble {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.formulario .mb-3 {
-  flex: 1 1 30%;
+.grupo-doble .mb-3 {
+  flex: 1 1 45%;
   display: flex;
   flex-direction: column;
+}
+
+.ancho-completo {
+  flex: 1 1 100%;
+}
+
+.form-label strong {
+  color: #362a5c;
 }
 
 .formulario .form-control {
